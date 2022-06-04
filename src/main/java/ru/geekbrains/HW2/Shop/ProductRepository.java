@@ -10,17 +10,29 @@ import java.util.stream.Collectors;
 public class ProductRepository {
     public List<Product> products = new ArrayList<>();
 
+
+
     public List<Product> getProducts() {
+
         return products;
     }
 
+
+
+
     public Product getProductById(int index) {
+
         return this.products.get(index);
     }
 
+
+
     public void addProduct(Product product) {
+
         this.products.add(product);
     }
+
+
 
     @Override
     public String toString() {

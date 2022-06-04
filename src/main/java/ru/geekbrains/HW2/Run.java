@@ -36,7 +36,7 @@ public class Run implements CommandLineRunner, BeanPostProcessor {
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(in))) {
             String input;
             while (true) {
-                System.out.println("Выберите товар для добавления в корзину, пример: add 1 \nили: del 1 для удаления товара ");
+                System.out.println("Выберите товар для добавления в корзину, пример: add 1 \n или: del 1 для удаления товара ");
                 input = bufferedReader.readLine().trim();
                 switch (input.split(" ")[0]) {
                     case "add":
